@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--===============================================================================================-->
+</head>
+<body>
+
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100">
+            <a href="landingPage.html">
+                <div class="login100-pic js-tilt" data-tilt>
+                    <img src="images/img-01.png" alt="IMG">
+                </div>
+            </a>
+
+            <form class="login100-form validate-form" action="register.php" method="post"
+                  enctype="multipart/form-data" id="register-form">
+					<span class="login100-form-title">
+						Register User
+					</span>
+                <div id="user-availability-status"></div>
+                <div id="email-availability-status"></div>
+
+
+                <div class="wrap-input100 validate-input" data-validate="First Name is required">
+                    <label>
+                        <input class="input100" type="text" name="firstname" placeholder="First Name">
+                    </label>
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Last Name is required">
+                    <label>
+                        <input class="input100" type="text" name="lastname" placeholder="Last Name">
+                    </label>
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Email is required">
+                    <label>
+                        <input class="input100" type="email" name="email" id="email" placeholder="Email">
+                    </label>
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Username is required">
+                    <label>
+                        <input class="input100" type="text" name="username" id="username" autocomplete="off" onkeypress="checkUsername()" placeholder="Username">
+                    </label>
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Password is required">
+                    <label>
+                        <input class="input100" type="password" name="password" placeholder="Password">
+                    </label>
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Password retyped is required">
+                    <label>
+                        <input class="input100" type="password" name="password_retyped" placeholder="Password Retyped">
+                    </label>
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+                </div>
+
+                <div class="wrap-input100 validate-input">
+                    <label>
+                        <input type="radio" value="female" name="gender">
+                    </label>Female
+                    <label>
+                        <input type="radio" value="male" name="gender">
+                    </label>Male
+                </div>
+
+                <div class="wrap-input100 validate-input">
+                    <label>
+                        <input type="checkbox" value="single" name="marital">
+                    </label>Single
+                    <label>
+                        <input type="checkbox" value="married" name="marital">
+                    </label>Married
+                    <label>
+                        <input type="checkbox" value="divorced" name="marital">
+                    </label>Divorced
+                </div>
+
+                <div class="wrap-input100 validate-input">
+                    <label>Upload profile image:</label>
+                    <input type="file" name="image"/>
+                </div>
+
+                <div class="container-login100-form-btn">
+                    <button class="login100-form-btn" type="submit" name="submit">
+                        Submit
+                    </button>
+                </div>
+                <div class="container-login100-form-btn">
+                    <button class="login100-form-btn" type="reset">
+                        Reset
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!--===============================================================================================-->
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/bootstrap/js/popper.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/tilt/tilt.jquery.min.js"></script>
+<script>
+    $('.js-tilt').tilt({
+        scale: 1.1
+    })
+</script>
+<!--===============================================================================================-->
+<script src="js/main.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/check-available.js"></script>
+</body>
+</html>
